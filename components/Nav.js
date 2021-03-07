@@ -8,12 +8,14 @@ const Nav = () => {
         <div className="flex justify-between">
           <div className="flex justify-between items-center space-x-6">
             <div>
+            <Link href="/">
               <Image
                 src="/Logos/lg-redesf-1280x427.png"
                 alt="Rede Sem Fronteiras"
                 width={256}
                 height={85}
               />
+              </Link>
             </div>
 
             <div className="hidden md:flex space-x-6 justify-around">
@@ -138,8 +140,8 @@ const Nav = () => {
 
           <div className="relative group">
             <button className="flex flex-row text-left items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
-              <Link href="#">
-                <a href="/quem-somos" className="hover:text-green-700 px-4">
+              <Link href="/quem-somos">
+                <a className="hover:text-green-700 px-4">
                   Quem Somos
                 </a>
               </Link>

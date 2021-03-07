@@ -10,7 +10,7 @@ const ConselhoInternacional = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="font-bold text-center text-gray-800 text-3xl py-4 my-4">
-        <h1>Conselho Inernacional</h1>
+        <h1>Conselho Internacional</h1>
       </div>
 
       {/* Cards */}
