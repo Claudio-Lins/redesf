@@ -16,7 +16,7 @@ const ConselhoInternacional = () => {
       {/* Cards */}
       {/* Card COntent */}
 
-      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
             <img
@@ -48,7 +48,7 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
             <img
@@ -74,7 +74,7 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
             <img
