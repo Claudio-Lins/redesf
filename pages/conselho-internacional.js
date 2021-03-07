@@ -100,6 +100,32 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
+      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+        <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
+          <div className="sm:flex sm:items-center sm:mx-auto">
+            <img
+              src="/conselho-internacional/Alfonso-Ramiro.jpg"
+              className="sm:flex-shrink-0 sm:mx-0 h-24 mx-auto mb-4"
+            />
+            <div className="sm:ml-4 sm:text-left text-center">
+              <h4 className="">
+                <strong className="text-sm text-gray-800">
+                Alfonso Ramiro Hinojosa Gordonava | 
+                </strong>
+                <a
+                  className="text-xs ml-2 text-blue-400"
+                  href="mailto:a.hinojosa@redesf.org"
+                >
+                a.hinojosa@redesf.org 
+                </a>
+              </h4>
+              <p className="text-gray-600 text-sm font-light text-justify">
+              Sociólogo, mestre em Ciências Sociais com especialidade em Antropologia. Membro fundador da Rede Sem Fronteiras. Membro do Grupo de Trabalho sobre Migração e Cultura CLACSO (Conselho Latinoamericano de Ciências Sociais). Professor e pesquisador convidado do Instituto de Pesquisa, Interação e Pós-graduação da Carreira de Serviço Social da UMSA. Pesquisador da temática migratória para instituições como PIEB (Programa de Investigação Estratégica de Bolivia), CESU (Centro Universitário de Estudos Superiores), defensor do povo. Membro do CEDLA (Centro de Estudos para o Desenvolvimento do Trabalho e Agrário), Coordenador da Mulher, Oxfam Bolívia e da Fundação pela Paz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
