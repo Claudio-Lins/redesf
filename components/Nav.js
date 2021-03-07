@@ -8,12 +8,14 @@ const Nav = () => {
         <div className="flex justify-between">
           <div className="flex justify-between items-center space-x-6">
             <div>
+            <Link href="/">
               <Image
                 src="/Logos/lg-redesf-1280x427.png"
                 alt="Rede Sem Fronteiras"
                 width={256}
                 height={85}
               />
+              </Link>
             </div>
 
             <div className="hidden md:flex space-x-6 justify-around">
