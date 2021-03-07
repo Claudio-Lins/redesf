@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Nav = () => {
   return (
-    <nav className="bg-white shadow-md py-2 justify-center">
+    <nav className="bg-white shadow-md py-2 justify-center top-0 fixed inset-x-0">
       <div className="max-w-5xl px-4 mx-auto">
         <div className="flex justify-between">
           <div className="flex justify-between items-center space-x-6">
@@ -45,7 +45,7 @@ const Nav = () => {
                           </div>
 
                           <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
-                            <Link href="#">
+                            <Link href="/conselho-internacional">
                               <a className="inline-block">Conselho Internacional</a>
                             </Link>
                           </div>
