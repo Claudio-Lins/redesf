@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Nav = () => {
   return (
-    <nav className="bg-white shadow-md py-2 justify-center top-0 fixed inset-x-0">
+    <nav className="bg-white z-30 shadow-md py-2 justify-center top-0 fixed inset-x-0">
       <div className="max-w-5xl px-4 mx-auto">
         <div className="flex justify-between">
           <div className="flex justify-between items-center space-x-6">
@@ -17,7 +17,6 @@ const Nav = () => {
             </div>
 
             <div className="hidden md:flex space-x-6 justify-around">
-
               {/* Home */}
               <div className="ml-10">
                 <Link href="/">
@@ -29,46 +28,52 @@ const Nav = () => {
               {/*  */}
 
               {/* Dropdown - Quem Somos */}
-                <nav className="relative z-20 flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:flex-row">
-                  <div className="relative group">
-                    <button className="flex flex-row text-left items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
-                      <a className="hover:text-green-700 px-4">Quem Somos</a>
-                    </button>
-                    <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-                      <div className="pt-2 rounded-md shadow-lg bg-white">
-                        <div className="grid grid-cols-1">
-                          
-                          <div className="hover:text-green-700  mb-0 py-2 bg-white ml-4">
-                            <Link href="#">
-                              <a className="">Carta de Princípios</a>
-                            </Link>
-                          </div>
+              <nav className="relative z-20 flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:flex-row">
+                <div className="relative group">
+                  <button className="flex flex-row text-left items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
+                    <Link href="/quem-somos">
+                      <a
+                        className="hover:text-green-700 px-4"
+                      >
+                        Quem Somos
+                      </a>
+                    </Link>
+                  </button>
+                  <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
+                    <div className="pt-2 rounded-md shadow-lg bg-white">
+                      <div className="grid grid-cols-1">
+                        <div className="hover:text-green-700  mb-0 py-2 bg-white ml-4">
+                          <Link href="#">
+                            <a className="">Carta de Princípios</a>
+                          </Link>
+                        </div>
 
-                          <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
-                            <Link href="/conselho-internacional">
-                              <a className="inline-block">Conselho Internacional</a>
-                            </Link>
-                          </div>
+                        <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                          <Link href="/conselho-internacional">
+                            <a className="inline-block">
+                              Conselho Internacional
+                            </a>
+                          </Link>
+                        </div>
 
-                          <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
-                            <Link href="#">
-                              <a className="inline-block">Conselho Diretor</a>
-                            </Link>
-                          </div>
+                        <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                          <Link href="#">
+                            <a className="inline-block">Conselho Diretor</a>
+                          </Link>
+                        </div>
 
-                          <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
-                            <Link href="#">
-                              <a className="inline-block">Secretaria Técnica</a>
-                            </Link>
-                          </div>
-
+                        <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                          <Link href="#">
+                            <a className="inline-block">Secretaria Técnica</a>
+                          </Link>
                         </div>
                       </div>
                     </div>
                   </div>
-                </nav>
+                </div>
+              </nav>
               {/*  */}
-              
+
               {/* Campanhas */}
               <div className="ml-10">
                 <Link href="#">
@@ -121,53 +126,54 @@ const Nav = () => {
         </div>
         {/* Menu Mobile */}
         <div id="mobile-menu" className="hidden md:hidden">
-        {/* Home */}
-        <div className="ml-10">
-                <Link href="/">
-                  <a className="hover:text-green-600">
-                    <h3>Home</h3>
-                  </a>
-                </Link>
-              </div>
-              {/*  */}
+          {/* Home */}
+          <div className="ml-10">
+            <Link href="/">
+              <a className="hover:text-green-600">
+                <h3>Home</h3>
+              </a>
+            </Link>
+          </div>
+          {/*  */}
 
-        <div className="relative group">
-                    <button className="flex flex-row text-left items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
-                      <a className="hover:text-green-700 px-4">Quem Somos</a>
-                    </button>
-                    <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-                      <div className="pt-2 rounded-md shadow-lg bg-white">
-                        <div className="grid grid-cols-1">
-                          
-                          <div className="hover:text-green-700  mb-0 py-2 bg-white ml-4">
-                            <Link href="#">
-                              <a className="">Carta de Princípios</a>
-                            </Link>
-                          </div>
-
-                          <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
-                            <Link href="/conselho-internacional">
-                              <a className="inline-block">Conselho Internacional</a>
-                            </Link>
-                          </div>
-
-                          <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
-                            <Link href="#">
-                              <a className="inline-block">Conselho Diretor</a>
-                            </Link>
-                          </div>
-
-                          <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
-                            <Link href="#">
-                              <a className="inline-block">Secretaria Técnica</a>
-                            </Link>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
+          <div className="relative group">
+            <button className="flex flex-row text-left items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
+              <Link href="#">
+                <a href="/quem-somos" className="hover:text-green-700 px-4">
+                  Quem Somos
+                </a>
+              </Link>
+            </button>
+            <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
+              <div className="pt-2 rounded-md shadow-lg bg-white">
+                <div className="grid grid-cols-1">
+                  <div className="hover:text-green-700  mb-0 py-2 bg-white ml-4">
+                    <Link href="#">
+                      <a className="">Carta de Princípios</a>
+                    </Link>
                   </div>
-          
+
+                  <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                    <Link href="/conselho-internacional">
+                      <a className="inline-block">Conselho Internacional</a>
+                    </Link>
+                  </div>
+
+                  <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                    <Link href="#">
+                      <a className="inline-block">Conselho Diretor</a>
+                    </Link>
+                  </div>
+
+                  <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                    <Link href="#">
+                      <a className="inline-block">Secretaria Técnica</a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>

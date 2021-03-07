@@ -4,7 +4,7 @@ import Head from 'next/head'
 const ConselhoInternacional = () => {
   return (
     
-    <div className="h-screen bg-gray-50 mt-28">
+    <div className="min-h-screen bg-gray-50 mt-28 mb-20">
       <Head>
         <title>RedeSF - Conselho Internacional</title>
         <link rel="icon" href="/favicon.ico" />
@@ -16,7 +16,7 @@ const ConselhoInternacional = () => {
       {/* Cards */}
       {/* Card COntent */}
 
-      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+      <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
             <img
@@ -48,7 +48,7 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+      <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
             <img
@@ -74,7 +74,7 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+      <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
             <img
@@ -100,7 +100,7 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+      <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
             <img
@@ -126,7 +126,7 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+      <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
             <img
@@ -152,7 +152,7 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+      <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
             <img
@@ -178,7 +178,7 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      <div className="lg:flex p-8 lg:items-center lg:px-24 lg:py-2 xl:p-48">
+      <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
             <img
