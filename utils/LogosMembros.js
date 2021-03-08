@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 const LogosMembros = () => {
     return (
-        <div className='grid grid-cols-3 items-center'>
-            <div className='p-4 mx-auto'>
+        <div className='mx-auto grid grid-cols-3 text-center space-y-2 items-center'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/organizacao-filhos-do-mundo_lg.png"
             alt="Organização Filhos do Mundo"
@@ -11,7 +11,7 @@ const LogosMembros = () => {
             height={90}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/cdh-lg-200x142.png"
             alt="CDH"
@@ -19,7 +19,7 @@ const LogosMembros = () => {
             height={71}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/casa-do-brasil-de-lisboa-lg.png"
             alt="Casa do Brasil de Lisboa"
@@ -27,7 +27,7 @@ const LogosMembros = () => {
             height={90}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/cdhic-color-horizontal-espacio-sin-fronteras-esf-100x50.png"
             alt="CDHIC"
@@ -35,7 +35,7 @@ const LogosMembros = () => {
             height={50}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/proandes-lg-100x100.jpg"
             alt="Proandes"
@@ -43,7 +43,7 @@ const LogosMembros = () => {
             height={100}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/unifesp-lindomar-albuquerque-lg-166x100.png"
             alt="Unifesp"
@@ -51,7 +51,7 @@ const LogosMembros = () => {
             height={80}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/cedal-lg-100x100.png"
             alt="Cedal"
@@ -59,7 +59,7 @@ const LogosMembros = () => {
             height={100}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/fec-lg-100x100.jpg"
             alt="FEC"
@@ -67,7 +67,7 @@ const LogosMembros = () => {
             height={80}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/del-agora-lg.jpg"
             alt="Del"
@@ -75,7 +75,7 @@ const LogosMembros = () => {
             height={100}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/codhes-lg-144x50.png"
             alt="Codhes"
@@ -83,7 +83,7 @@ const LogosMembros = () => {
             height={50}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/coapy-lg-113x80.jpg"
             alt="Coapy"
@@ -91,7 +91,7 @@ const LogosMembros = () => {
             height={96}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/re-lg-159x70.jpg"
             alt="Del"
@@ -99,7 +99,7 @@ const LogosMembros = () => {
             height={70}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/pal-oriana-Jara-lg-113x80.png"
             alt="Pal Oriana Jara"
@@ -107,7 +107,7 @@ const LogosMembros = () => {
             height={80}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/coordenacao-direitos-sociais-Saude-e-seguridade-lg-120x85.jpg"
             alt="Coordenação Direitos Sociais Saude e Seguridade"
@@ -115,15 +115,15 @@ const LogosMembros = () => {
             height={85}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/alampyme-br-360x70.gif"
             alt="Del"
-            width={360}
-            height={70}
+            width={288}
+            height={56}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/umsa-lg-74x150.png"
             alt="Codhes"
@@ -131,7 +131,7 @@ const LogosMembros = () => {
             height={150}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/Instituto-edesio-passos-lg-113x80.png"
             alt="Coapy"
@@ -139,7 +139,7 @@ const LogosMembros = () => {
             height={80}
           />
             </div>
-            <div className='p-4 mx-auto'>
+            <div className='p-4'>
             <Image
             src="/quem-somos/Logos/casa-da-gente-lg-80x120.png"
             alt="Casa da Gente"
