@@ -8,6 +8,9 @@
     @apply  block;
   }
   
+  .btnDropdown {
+    @apply inline-block px-2 py-1 hover:bg-gray-200 leading-tight rounded hover:shadow hover:text-green-700;
+  }
 
 @tailwind components;
 

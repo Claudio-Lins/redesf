@@ -8,13 +8,13 @@ const Nav = () => {
         <div className="flex justify-between">
           <div className="flex justify-between items-center space-x-6">
             <div>
-            <Link href="/">
-              <Image
-                src="/Logos/lg-redesf-1280x427.png"
-                alt="Rede Sem Fronteiras"
-                width={256}
-                height={85}
-              />
+              <Link href="/">
+                <Image
+                  src="/Logos/lg-redesf-1280x427.png"
+                  alt="Rede Sem Fronteiras"
+                  width={256}
+                  height={85}
+                />
               </Link>
             </div>
 
@@ -34,44 +34,42 @@ const Nav = () => {
                 <div className="relative group">
                   <button className="flex flex-row text-left items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
                     <Link href="/quem-somos">
-                      <a
-                        className="hover:text-green-700 px-4"
-                      >
-                        Quem Somos
-                      </a>
+                      <a className="hover:text-green-700 px-4">Quem Somos</a>
                     </Link>
                   </button>
                   <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
                     <div className="pt-2 rounded-md shadow-lg bg-white">
                       <div className="grid grid-cols-1">
-                        <div className="hover:text-green-700  mb-0 py-2 bg-white ml-4">
+                        <div className="mb-0 py-2 bg-white mx-2">
                           <Link href="#">
-                            <a className="">Carta de Princípios</a>
+                            <a className="btnDropdown">Carta de Princípios</a>
                           </Link>
                         </div>
 
-                        <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                        <div className="mb-0 py-2 bg-white mx-2">
                           <Link href="/conselho-internacional">
-                            <a className="inline-block">
+                            <a className="btnDropdown">
                               Conselho Internacional
                             </a>
                           </Link>
                         </div>
 
-                        <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                        <div className="mb-0 py-2 bg-white mx-2">
                           <Link href="#">
-                            <a className="inline-block">Conselho Diretor</a>
+                            <a className="btnDropdown">Conselho Diretor</a>
                           </Link>
                         </div>
 
-                        <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                        <div className="mb-0 py-2 bg-white mx-2">
                           <Link href="#">
-                            <a className="inline-block">Secretaria Técnica</a>
+                            <a className="btnDropdown">Secretaria Técnica</a>
                           </Link>
                         </div>
                       </div>
                     </div>
                   </div>
+                
+                
                 </div>
               </nav>
               {/*  */}
@@ -141,9 +139,7 @@ const Nav = () => {
           <div className="relative group">
             <button className="flex flex-row text-left items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
               <Link href="/quem-somos">
-                <a className="hover:text-green-700 px-4">
-                  Quem Somos
-                </a>
+                <a className="hover:text-green-700 px-4">Quem Somos</a>
               </Link>
             </button>
             <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
@@ -191,4 +187,5 @@ if (typeof window !== "undefined") {
   btn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
   });
+
 }
