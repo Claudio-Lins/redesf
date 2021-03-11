@@ -7,6 +7,7 @@ module.exports = {
   variants: {
     display: ['responsive', 'group-hover', 'group-focus'],
     fontWeight: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    animation: ['hover', 'focus'],
     extend: {},
   },
   plugins: [],
