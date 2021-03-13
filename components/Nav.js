@@ -4,26 +4,70 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Nav = () => {
   return (
-    <nav className="bg-white z-30 shadow-md py-2 justify-center top-0 fixed inset-x-0">
-      <div className="h-10 bg-yellow-600 flex">
-        <div className="flex items-center container mx-auto space-x-3 text-gray-50">
-          
+    <nav className="bg-white z-30 shadow-md justify-center top-0 fixed inset-x-0">
+      <div className="h-10 bg-yellow-600 flex mb-2 px-4">
+        <div className="flex container mx-auto justify-between">
+          <div className="flex items-center space-x-4">
+            <div className="flex cursor-pointer hover:animate-bounce">
+              <Link href="/">
+                <Image
+                  src="/social-network/instagram-icon.svg"
+                  alt="Instagram"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+            </div>
+            <div className="flex cursor-pointer hover:animate-bounce">
+              <Link href="/">
+                <Image
+                  src="/social-network/youtube-icon.svg"
+                  alt="Youtube"
+                  width={23}
+                  height={23}
+                />
+              </Link>
+            </div>
+            <div className="flex cursor-pointer hover:animate-bounce">
+              <Link href="/">
+                <Image
+                  src="/social-network/facebook-icon.svg"
+                  alt="Facebook"
+                  width={18}
+                  height={18}
+                />
+              </Link>
+            </div>
+            <div className="flex cursor-pointer hover:animate-bounce">
+              <Link href="/">
+                <Image
+                  src="/social-network/linkedin-icon.svg"
+                  alt="Linkedin"
+                  width={18}
+                  height={18}
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <div className='flex space-x-2'>
             <Link href="/">
-              <Image
-                src="/social-network/facebook-square-brands.svg"
-                alt="Facebook"
-                width={25}
-                height={25}
-              />
-            </Link>
-          
+                <Image
+                  src="/social-network/phone-call.svg"
+                  alt="Phone Call"
+                  width={18}
+                  height={18}
+                />
+              </Link>
+              <h3 className='text-gray-50 text-sm tracking-wide'>+351 123 456 789</h3>
+            </div>
+          </div>
         </div>
-        <i class="fab fa-instagram"></i>
       </div>
       <div className="max-w-5xl px-4 mx-auto">
         <div className="flex justify-between">
           <div className="flex justify-between items-center space-x-6">
-            <div>
+            <div className=' cursor-pointer'>
               <Link href="/">
                 <Image
                   src="/Logos/lg-redesf-1280x427.png"

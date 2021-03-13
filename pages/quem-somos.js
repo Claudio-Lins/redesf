@@ -4,7 +4,7 @@ import LogosMembros from '../utils/LogosMembros'
 
 const ConselhoInternacional = () => {
   return (
-    <div className="min-h-screen bg-white mt-28 mb-20">
+    <div className="min-h-screen bg-white mt-36 mb-20">
       <Head>
         <title>RedeSF - Quem Somos</title>
         <link rel="icon" href="/favicon.ico" />
