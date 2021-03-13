@@ -1,10 +1,25 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Nav = () => {
   return (
     <nav className="bg-white z-30 shadow-md py-2 justify-center top-0 fixed inset-x-0">
+      <div className="h-10 bg-yellow-600 flex">
+        <div className="flex items-center container mx-auto space-x-3 text-gray-50">
+          
+            <Link href="/">
+              <Image
+                src="/social-network/facebook-square-brands.svg"
+                alt="Facebook"
+                width={25}
+                height={25}
+              />
+            </Link>
+          
+        </div>
+        <i class="fab fa-instagram"></i>
+      </div>
       <div className="max-w-5xl px-4 mx-auto">
         <div className="flex justify-between">
           <div className="flex justify-between items-center space-x-6">
@@ -23,8 +38,9 @@ const Nav = () => {
               {/* Home */}
               <div className="ml-10 hover:animate-bounce hover:font-bold">
                 <Link href="/">
-                <a className="hover:text-green-600 flex items-center space-x-1">
-                    <FontAwesomeIcon className='h-4' icon='home'/><h3>Home</h3>
+                  <a className="hover:text-green-600 flex items-center space-x-1">
+                    <FontAwesomeIcon className="h-4" icon="home" />
+                    <h3>Home</h3>
                   </a>
                 </Link>
               </div>
@@ -69,8 +85,6 @@ const Nav = () => {
                       </div>
                     </div>
                   </div>
-                
-                
                 </div>
               </nav>
               {/*  */}
@@ -87,7 +101,8 @@ const Nav = () => {
               {/* Arquivos */}
               <div className="ml-10 hover:animate-bounce hover:font-bold">
                 <Link href="#">
-                  <a className="hover:text-green-500">
+                  <a className="hover:text-green-600 flex items-center space-x-1">
+                    <FontAwesomeIcon className="h-4" icon="file-alt" />
                     <h3>Arquivos</h3>
                   </a>
                 </Link>
@@ -96,7 +111,8 @@ const Nav = () => {
               {/* Contatos */}
               <div className="ml-10 hover:animate-bounce hover:font-bold">
                 <Link href="#">
-                  <a className="hover:text-green-500">
+                  <a className="hover:text-green-600 flex items-center space-x-1">
+                    <FontAwesomeIcon className="h-4" icon="address-card" />
                     <h3>Contatos</h3>
                   </a>
                 </Link>
@@ -188,5 +204,4 @@ if (typeof window !== "undefined") {
   btn.addEventListener("click", () => {
     menu.classList.toggle("hidden");
   });
-
 }
