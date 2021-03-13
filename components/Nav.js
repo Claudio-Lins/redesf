@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Nav = () => {
   return (
@@ -22,8 +23,8 @@ const Nav = () => {
               {/* Home */}
               <div className="ml-10">
                 <Link href="/">
-                  <a className="hover:text-green-600">
-                    <h3>Home</h3>
+                  <a className="hover:text-green-600 flex items-center space-x-1">
+                    <FontAwesomeIcon className='h-4' icon='home'/><h3>Home</h3>
                   </a>
                 </Link>
               </div>
