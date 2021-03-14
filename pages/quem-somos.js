@@ -72,7 +72,7 @@ const ConselhoInternacional = () => {
                 <div className="w-10 h-10 p-6 flex items-center justify-center ">
                   <h3 className='font-bold text-5xl text-yellow-600'>1</h3>
                 </div>
-                <p className="leading-relaxed text-base"> A <strong className="font-semibold">Rede Sem Fronteiras</strong> tem como missão impactar politicamente os órgãos de decisão em âmbito local, regional e internacional, propondo políticas públicas de cooperação para.</p>
+                <p className="leading-relaxed text-base"> Promover os direitos humanos, a defesa das pessoas migrantes e refugiadas, sua integraçnao e o direito à cidadania universal.</p>
               </div>
             </div>
             
@@ -81,7 +81,7 @@ const ConselhoInternacional = () => {
                 <div className="w-10 h-10 p-6 flex items-center justify-center ">
                   <h3 className='font-bold text-5xl text-yellow-600'>2</h3>
                 </div>
-                <p className="leading-relaxed text-base"> A <strong className="font-semibold">Rede Sem Fronteiras</strong> tem como missão impactar politicamente os órgãos de decisão em âmbito local, regional e internacional, propondo políticas públicas de cooperação para.</p>
+                <p className="leading-relaxed text-base">Defender a participação social das pessoas migrantes e refugiadas como sujeitos de direitos e constituintes das políticas migratórias.</p>
               </div>
             </div>
             
@@ -90,7 +90,7 @@ const ConselhoInternacional = () => {
                 <div className="w-10 h-10 p-6 flex items-center justify-center ">
                   <h3 className='font-bold text-5xl text-yellow-600'>3</h3>
                 </div>
-                <p className="leading-relaxed text-base"> A <strong className="font-semibold">Rede Sem Fronteiras</strong> tem como missão impactar politicamente os órgãos de decisão em âmbito local, regional e internacional, propondo políticas públicas de cooperação para.</p>
+                <p className="leading-relaxed text-base">Defender e apoiar propostas alternativas de políticas públicas, projetos de leis e programas embasados nos direitos humanos, com ênfase nas diversidades de gênero, étnicas e geracionais.</p>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ const ConselhoInternacional = () => {
                 <div className="w-10 h-10 p-6 flex items-center justify-center ">
                   <h3 className='font-bold text-5xl text-yellow-600'>4</h3>
                 </div>
-                <p className="leading-relaxed text-base"> A <strong className="font-semibold">Rede Sem Fronteiras</strong> tem como missão impactar politicamente os órgãos de decisão em âmbito local, regional e internacional, propondo políticas públicas de cooperação para.</p>
+                <p className="leading-relaxed text-base">Incidir nas instâncias decisórias para um reconhecimento integral dos direitos trabalhistas, econômicos, sociais, culturais, ambinetais, políticos e civis dos migrantes e de suas famílias.</p>
               </div>
             </div>
 
@@ -108,7 +108,7 @@ const ConselhoInternacional = () => {
                 <div className="w-10 h-10 p-6 flex items-center justify-center ">
                   <h3 className='font-bold text-5xl text-yellow-600'>5</h3>
                 </div>
-                <p className="leading-relaxed text-base"> A <strong className="font-semibold">Rede Sem Fronteiras</strong> tem como missão impactar politicamente os órgãos de decisão em âmbito local, regional e internacional, propondo políticas públicas de cooperação para.</p>
+                <p className="leading-relaxed text-base">Construir alianças entre movimentos sociais e autoridades locais para avançar na construçnao de cidades universais, solidárias e acolhedoras e nas políticas alternativas de governança migratória.</p>
               </div>
             </div>
 
@@ -117,25 +117,7 @@ const ConselhoInternacional = () => {
                 <div className="w-10 h-10 p-6 flex items-center justify-center ">
                   <h3 className='font-bold text-5xl text-yellow-600'>6</h3>
                 </div>
-                <p className="leading-relaxed text-base"> A <strong className="font-semibold">Rede Sem Fronteiras</strong> tem como missão impactar politicamente os órgãos de decisão em âmbito local, regional e internacional, propondo políticas públicas de cooperação para.</p>
-              </div>
-            </div>
-
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border flex items-center border-gray-200 p-6 rounded-lg">
-                <div className="w-10 h-10 p-6 flex items-center justify-center ">
-                  <h3 className='font-bold text-5xl text-yellow-600'>7</h3>
-                </div>
-                <p className="leading-relaxed text-base"> A <strong className="font-semibold">Rede Sem Fronteiras</strong> tem como missão impactar politicamente os órgãos de decisão em âmbito local, regional e internacional, propondo políticas públicas de cooperação para.</p>
-              </div>
-            </div>
-
-            <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border flex items-center border-gray-200 p-6 rounded-lg">
-                <div className="w-10 h-10 p-6 flex items-center justify-center ">
-                  <h3 className='font-bold text-5xl text-yellow-600'>8</h3>
-                </div>
-                <p className="leading-relaxed text-base"> A <strong className="font-semibold">Rede Sem Fronteiras</strong> tem como missão impactar politicamente os órgãos de decisão em âmbito local, regional e internacional, propondo políticas públicas de cooperação para.</p>
+                <p className="leading-relaxed text-base">Articular a diáspora latina americana, defender políticas de cooperação entre os povos, por um desenvolvimento sustentável, de superação de assimetrias, pelo direito a migrar e a migrar com direitos.</p>
               </div>
             </div>
             
@@ -150,8 +132,9 @@ const ConselhoInternacional = () => {
           <Image
             src="/quem-somos/bannersite2-6-1280x320.png"
             alt="Rede Sem Fronteiras"
-            width={1280}
-            height={320}
+            layout="responsive"
+            width={1920}
+            height={480}
           />
           <div className='md:px-20 mt-6'>
           <LogosMembros/>
