@@ -10,5 +10,5 @@ module.exports = {
     animation: ['hover', 'focus'],
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }
