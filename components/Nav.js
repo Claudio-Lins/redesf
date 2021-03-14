@@ -154,7 +154,7 @@ const Nav = () => {
               {/*  */}
               {/* Contatos */}
               <div className="ml-10 hover:animate-bounce hover:font-bold">
-                <Link href="#">
+                <Link href="/contact">
                   <a className="hover:text-green-600 flex items-center space-x-1">
                     <FontAwesomeIcon className="h-4" icon="address-card" />
                     <h3>Contatos</h3>
