@@ -65,7 +65,7 @@ const Contact = () => {
                 name="name"
                 type="text"
                 required
-                className="w-full p-2 border rounded border-gray-300"
+                className="w-full p-2 border rounded border-gray-300 text-xs font-light"
                 placeholder="Nome completo"
               ></input>
             </div>
@@ -76,13 +76,30 @@ const Contact = () => {
                 type="email"
                 autoComplete="email"
                 required
-                className="w-full p-2 border rounded border-gray-300"
+                className="w-full p-2 border rounded border-gray-300 text-xs font-light outline-none focus:outline-none"
                 placeholder="E-mail"
               ></input>
             </div>
-            <div className='flex items-center'>
-                <input id='terms' type='checkbox' className='rounded border-gray-300 text-yellow-600 focus:ring-offset-yellow-600'/>
-                <label for='terms' className='ml-2 block text-sm text-gray-800'>Eu concordo com os <a href='#' className=' hover:text-yellow-700'>Termos</a></label>
+            <div className="flex items-center">
+                <textarea className='w-full rounded-md border-gray-300 my-2 text-xs font-light resize-x' placeholder='Mensagem'></textarea>
+            </div>
+            <div className="flex items-center">
+              <input
+                id="terms"
+                type="checkbox"
+                className="rounded border-gray-300 text-yellow-600 focus:ring-offset-yellow-600"
+              />
+              <label for="terms" className="ml-2 text-xs text-gray-800">
+                Eu concordo com os{" "}
+                <a href="#" className=" hover:text-yellow-700">
+                  Termos
+                </a>
+              </label>
+            </div>
+            <div className="block mb-6 mt-4">
+              <button type='submit' className="px-4 py-2 bg-yellow-600 w-full text-sm text-white rounded-md">
+                Enviar
+              </button>
             </div>
           </form>
         </section>
