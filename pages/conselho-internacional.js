@@ -22,7 +22,7 @@ const ConselhoInternacional = () => {
               <Image
                 className="rounded-full object-cover"
                 src="/quem-somos/conselho-internacional/image09.jpeg"
-                alt="Carolina Huatay"
+                alt="Aida Garcia Naranjo"
                 width={80}
                 height={80}
               />
