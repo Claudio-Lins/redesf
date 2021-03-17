@@ -80,7 +80,7 @@ const Nav = () => {
 
             <div className="hidden md:flex space-x-6 justify-around">
               {/* Home */}
-              <div className="ml-10 hover:animate-bounce hover:font-bold">
+              <div className="hover:font-semibold">
                 <Link href="/">
                   <a className="hover:text-green-600 flex items-center space-x-1">
                     <FontAwesomeIcon className="h-4" icon="home" />
@@ -93,7 +93,7 @@ const Nav = () => {
               {/* Dropdown - Quem Somos */}
               <nav className="relative z-20 flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:flex-row">
                 <div className="relative group">
-                  <button className="flex flex-row text-left hover:animate-bounce hover:font-bold items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
+                  <button className="flex flex-row text-left hover:font-semibold items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
                     <Link href="/quem-somos">
                       <a className="hover:text-green-700 px-4">Quem Somos</a>
                     </Link>
@@ -134,7 +134,7 @@ const Nav = () => {
               {/*  */}
 
               {/* Campanhas */}
-              <div className="ml-10 hover:animate-bounce hover:font-bold">
+              <div className="hover:font-semibold">
                 <Link href="#">
                   <a className="hover:text-green-500">
                     <h3>Campanhas</h3>
@@ -143,20 +143,18 @@ const Nav = () => {
               </div>
               {/*  */}
               {/* Arquivos */}
-              <div className="ml-10 hover:animate-bounce hover:font-bold">
+              <div className=" hover:font-semibold">
                 <Link href="#">
                   <a className="hover:text-green-600 flex items-center space-x-1">
-                    <FontAwesomeIcon className="h-4" icon="file-alt" />
                     <h3>Arquivos</h3>
                   </a>
                 </Link>
               </div>
               {/*  */}
               {/* Contatos */}
-              <div className="ml-10 hover:animate-bounce hover:font-bold">
+              <div className="hover:font-semibold">
                 <Link href="/contact">
                   <a className="hover:text-green-600 flex items-center space-x-1">
-                    <FontAwesomeIcon className="h-4" icon="address-card" />
                     <h3>Contatos</h3>
                   </a>
                 </Link>
