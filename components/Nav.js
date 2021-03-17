@@ -186,7 +186,7 @@ const Nav = () => {
         {/* Menu Mobile */}
         <div id="mobile-menu" className="hidden md:hidden">
           {/* Home */}
-          <div className="ml-10">
+          <div className="text-center">
             <Link href="/">
               <a className="hover:text-green-600">
                 <h3>Home</h3>
@@ -196,33 +196,33 @@ const Nav = () => {
           {/*  */}
 
           <div className="relative group">
-            <button className="flex flex-row text-left items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
+            <button className="flex flex-row mx-auto items-center rounded-lg md:w-full md:inline md:mt-0 md:ml-0 focus:outline-none">
               <Link href="/quem-somos">
                 <a className="hover:text-green-700 px-4">Quem Somos</a>
               </Link>
             </button>
-            <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-              <div className="pt-2 rounded-md shadow-lg bg-white">
+            <div className="absolute z-10 hidden bg-gray-50 group-hover:block">
+              <div className="pt-2 rounded-md shadow-lg w-52">
                 <div className="grid grid-cols-1">
-                  <div className="hover:text-green-700  mb-0 py-2 bg-white ml-4">
+                  <div className="hover:text-green-700 mb-0 py-2 ml-4">
                     <Link href="#">
                       <a className="">Carta de Princípios</a>
                     </Link>
                   </div>
 
-                  <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                  <div className="hover:text-green-700 mb-0 py-2 ml-4">
                     <Link href="/conselho-internacional">
                       <a className="inline-block">Conselho Internacional</a>
                     </Link>
                   </div>
 
-                  <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                  <div className="hover:text-green-700 mb-0 py-2  ml-4">
                     <Link href="#">
                       <a className="inline-block">Conselho Diretor</a>
                     </Link>
                   </div>
 
-                  <div className="hover:text-green-700 mb-0 py-2 bg-white ml-4">
+                  <div className="hover:text-green-700 mb-0 py-2 ml-4">
                     <Link href="#">
                       <a className="inline-block">Secretaria Técnica</a>
                     </Link>
