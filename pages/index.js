@@ -35,7 +35,7 @@ export default function Home() {
                       A Rede Sem Fronteiras.
                     </h1>
                     <p className="mt-4 text-lg text-gray-100">
-                    Somos uma rede de organizações da sociedade civil, associações de imigrantes, instituições acadêmicas e ativistas com atuação na defesa e na promoção dos direitos das pessoas migrantes e refugiadas e na articulação da diáspora latino americana.
+                    Somos uma rede de organizações da sociedade civil, associações de imigrantes, instituições acadêmicas e ativistas com atuação na defesa e na promoção dos direitos das pessoas migrantes e refugiadas e na articulação da diáspora latino americana..
                     </p>
                   </div>
                 </div>
