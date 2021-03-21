@@ -123,6 +123,14 @@ const LogosMembros = () => {
             height={56}
           />
             </div>
+            <div className='p-4 hidden sm:flex'>
+            <Image
+            src="/quem-somos/logos/image-blank-75x150.png"
+            alt="image-blanck"
+            width={75}
+            height={150}
+          />
+          </div>
             <div className='p-4'>
             <Image
             src="/quem-somos/Logos/umsa-lg-74x150.png"
@@ -143,6 +151,15 @@ const LogosMembros = () => {
             <Image
             src="/quem-somos/Logos/casa-da-gente-lg-80x120.png"
             alt="Casa da Gente"
+            width={80}
+            height={120}
+          />
+            </div>
+
+            <div className='p-4 hidden sm:flex'>
+            <Image
+            src="/quem-somos/logos/image-blank-75x150.png"
+            alt="image-blank"
             width={80}
             height={120}
           />

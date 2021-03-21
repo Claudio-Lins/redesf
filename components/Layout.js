@@ -1,8 +1,8 @@
-import Nav from "./Nav"
+import Nav from '../components/Nav'
 
 const Layout = ({ children }) => {
     return (
-        <div className="antialiased text-gray-900 flex items-center justify-center min-h-screen">
+        <div className="mx-auto min-h-screen py-32">
             <Nav/>
             { children }
         </div>
