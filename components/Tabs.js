@@ -5,7 +5,7 @@ const Tabs = ({ color }) => {
   return (
     <>
       <div className="flex flex-wrap justify-center">
-        <div className="w-3/5">
+        <div className="w-4/5">
           <ul
             className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
             role="tablist"

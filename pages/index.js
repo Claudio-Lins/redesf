@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Tabs from "../components/Tabs";
-import { getCurrentDate } from "../utils/Date";
 
 export default function Home() {
   return (
