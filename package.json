@@ -5,8 +5,9 @@
   "private": false,
   "description": "Somos uma rede de organizações da sociedade civil, associações de imigrantes, instituições acadêmicas e ativistas com atuação na defesa e na promoção dos direitos das pessoas migrantes e refugiadas e na articulação da diáspora latino americana.",
   "repository": {
-  "type": "git",
-  "url": "https://github.com/Claudio-Lins"},
+    "type": "git",
+    "url": "https://github.com/Claudio-Lins"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -16,7 +17,9 @@
     "@tailwindcss/forms": "^0.2.1",
     "autoprefixer": "^10.2.5",
     "next": "^10.0.9",
+    "pg": "^7.18.2",
     "postcss": "^8.2.8",
+    "postgres": "^1.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "tailwindcss": "^2.0.4"
