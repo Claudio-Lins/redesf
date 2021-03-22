@@ -2,11 +2,11 @@
 
 export default function consInterAPI(req, res) {
   res.status(200).json({ 
-    imgUrl: '/',
+    imgUrl: "/quem-somos/conselho-internacional/image09.jpeg",
     cargo: 'Presidenta',
-    nome: 'Aida Garcia Naranjo',
+    name: 'Aida Garcia Naranjo',
     email: 'a.mocha@redesf.org',
-    descritivol: `Educadora, cientista política, pesquisadora social e política,
+    descritivo: `Educadora, cientista política, pesquisadora social e política,
     especialista em gênero, em captação de recursos multilaterais e
     bilaterais, além de ser promotora cultural. Foi Embaixadora do
     Peru na República Oriental do Uruguai, representante do Peru na
