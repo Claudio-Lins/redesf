@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Head from "next/head";
 
-const ConselhoInternacional = () => {
+export default function ConselhoInternacional() {
   return (
     <div className="min-h-screen bg-white mt-36 mb-20 container mx-auto">
       <Head>
         <title>RedeSF - Conselho Internacional</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <div className="font-bold text-center text-gray-800 text-3xl py-4 my-4">
         <h1>Conselho Internacional</h1>
@@ -28,9 +28,9 @@ const ConselhoInternacional = () => {
               />
             </div>
             <div className="sm:ml-4 sm:text-left text-center">
-            <h4 className="">
+              <h4 className="">
                 <strong className="text-sm text-gray-800">
-                  Presidenta: Aida Garcia Naranjo |
+                 Presidenta
                 </strong>
                 <a
                   className="text-xs  ml-2 text-blue-400"
@@ -40,7 +40,7 @@ const ConselhoInternacional = () => {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              Educadora, cientista política, pesquisadora social e política,
+                Educadora, cientista política, pesquisadora social e política,
                 especialista em gênero, em captação de recursos multilaterais e
                 bilaterais, além de ser promotora cultural. Foi Embaixadora do
                 Peru na República Oriental do Uruguai, representante do Peru na
@@ -52,8 +52,10 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      
-      <div className=' container px-4 sm:px-48 sm:py-2'><hr></hr></div>
+
+      <div className=" container px-4 sm:px-48 sm:py-2">
+        <hr></hr>
+      </div>
 
       <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
@@ -68,7 +70,7 @@ const ConselhoInternacional = () => {
               />
             </div>
             <div className="sm:ml-4 sm:text-left text-center">
-            <h4 className="">
+              <h4 className="">
                 <strong className="text-sm text-gray-800">
                   Valeria Chiavetta |
                 </strong>
@@ -80,7 +82,7 @@ const ConselhoInternacional = () => {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              Licenciada em Serviço Social, professora no Departamento de
+                Licenciada em Serviço Social, professora no Departamento de
                 Práticas de Serviço Social e docente da Cátedra. Eletiva de
                 Direitos Humanos da Faculdade de Ciências Políticas e Sociais da
                 Universidade Nacional de Cuyo, em Mendoza, na Argentina. É
@@ -93,8 +95,10 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      
-      <div className=' container px-4 sm:px-48 sm:py-2'><hr></hr></div>
+
+      <div className=" container px-4 sm:px-48 sm:py-2">
+        <hr></hr>
+      </div>
 
       <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
@@ -109,7 +113,7 @@ const ConselhoInternacional = () => {
               />
             </div>
             <div className="sm:ml-4 sm:text-left text-center">
-            <h4 className="">
+              <h4 className="">
                 <strong className="text-sm text-gray-800">
                   Patricia Gainza |
                 </strong>
@@ -121,7 +125,7 @@ const ConselhoInternacional = () => {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              Mestre em Sociologia com especialização em Integração, Mercosul
+                Mestre em Sociologia com especialização em Integração, Mercosul
                 e Desenvolvimento, exclusão social e redução da pobreza.
                 Atualmente é diretora da Divisão de Direitos Humanos da Direção
                 Nacional de Promoção Sociocultural, Ministério do
@@ -132,8 +136,10 @@ const ConselhoInternacional = () => {
         </div>
       </div>
 
-      <div className=' container px-4 sm:px-48 sm:py-2'><hr></hr></div>
-      
+      <div className=" container px-4 sm:px-48 sm:py-2">
+        <hr></hr>
+      </div>
+
       <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
           <div className="sm:flex sm:items-center sm:mx-auto">
@@ -147,7 +153,7 @@ const ConselhoInternacional = () => {
               />
             </div>
             <div className="sm:ml-4 sm:text-left text-center">
-            <h4 className="">
+              <h4 className="">
                 <strong className="text-sm text-gray-800">
                   Alfonso Ramiro Hinojosa Gordonava |
                 </strong>
@@ -159,7 +165,7 @@ const ConselhoInternacional = () => {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              Sociólogo, mestre em Ciências Sociais com especialidade em
+                Sociólogo, mestre em Ciências Sociais com especialidade em
                 Antropologia. Membro fundador da Rede Sem Fronteiras. Membro do
                 Grupo de Trabalho sobre Migração e Cultura CLACSO (Conselho
                 Latinoamericano de Ciências Sociais). Professor e pesquisador
@@ -176,7 +182,9 @@ const ConselhoInternacional = () => {
         </div>
       </div>
 
-      <div className=' container px-4 sm:px-48 sm:py-2'><hr></hr></div>
+      <div className=" container px-4 sm:px-48 sm:py-2">
+        <hr></hr>
+      </div>
 
       <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
@@ -191,7 +199,7 @@ const ConselhoInternacional = () => {
               />
             </div>
             <div className="sm:ml-4 sm:text-left text-center">
-            <h4 className="">
+              <h4 className="">
                 <strong className="text-sm text-gray-800">
                   Kattya Gonzalez |
                 </strong>
@@ -203,7 +211,7 @@ const ConselhoInternacional = () => {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              Pós graduada em Direito Penal e Processo Penal. Reitora da
+                Pós graduada em Direito Penal e Processo Penal. Reitora da
                 Universidade Nacional de Assunção, no Paraguai. É autora dos
                 livros “Garantías Constitucionales en el Constitucionalismo
                 Iberoamericano”, escrito na Universidade Complutense de Madri –
@@ -219,8 +227,10 @@ const ConselhoInternacional = () => {
           </div>
         </div>
       </div>
-      
-      <div className=' container px-4 sm:px-48 sm:py-2'><hr></hr></div>
+
+      <div className=" container px-4 sm:px-48 sm:py-2">
+        <hr></hr>
+      </div>
 
       <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
@@ -237,7 +247,7 @@ const ConselhoInternacional = () => {
             <div className="sm:ml-4 sm:text-left text-center">
               <h4 className="">
                 <strong className="text-sm text-gray-800">
-                Carolina Huatay |
+                  Carolina Huatay |
                 </strong>
                 <a
                   className="text-xs ml-2 text-blue-400"
@@ -247,7 +257,7 @@ const ConselhoInternacional = () => {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              Comunicadora Social com habilitação em jornalismo no Peru,
+                Comunicadora Social com habilitação em jornalismo no Peru,
                 possui especialização em migração, cidadania, direitos humanos,
                 direitos ESC e políticas públicas do Brasil, Chile, Costa Rica e
                 México. Foi Coordenadora do Programa de Gênero do Observatório
@@ -269,7 +279,9 @@ const ConselhoInternacional = () => {
         </div>
       </div>
 
-      <div className=' container px-4 sm:px-48 sm:py-2'><hr></hr></div>
+      <div className=" container px-4 sm:px-48 sm:py-2">
+        <hr></hr>
+      </div>
 
       <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
         <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
@@ -314,6 +326,4 @@ const ConselhoInternacional = () => {
       </div>
     </div>
   );
-};
-
-export default ConselhoInternacional;
+}
