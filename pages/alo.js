@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from 'react'
 import Image from 'next/image'
 
-export default function Home({imgUrl}) {
+export default function Home(props) {
   return (
     <div className="mx-auto py-16">
       <Head>
@@ -10,28 +10,26 @@ export default function Home({imgUrl}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-          {/* {descritivo} */}
+          {props.conselhoInter.descritivo}
 
-          <Image
+          {/* <Image
                 className="rounded-full object-cover"
                 src={imgUrl}
                 alt="Aida Garcia Naranjo"
                 width={80}
                 height={80}
-              />
+              /> */}
       </main>
     </div>
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps(context) {
   const res = await fetch('http://localhost:3000/api/conselho-inter-api')
-  const json = await res.json();
+  const conselhoInter = await res.json();
   return {
     props: {
-      name: json.name,
-      descritivo: json.descritivo,
-      imgUrl: json.imgUrl
+      conselhoInter,
     }
   };
 }
