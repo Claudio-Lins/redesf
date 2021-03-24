@@ -270,7 +270,7 @@ export default function ConselhoInternacional(props) {
   
 }
 
-export async function getInitialProps(context) {
+export async function getServerSideProps(context) {
   const res = await fetch('http://localhost:3000/api/conselho-inter-api')
   const conselhoInter = await res.json();
   return {
