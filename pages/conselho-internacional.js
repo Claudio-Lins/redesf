@@ -1,5 +1,4 @@
-
-import fetch from 'isomorphic-unfetch'
+import fetch from "isomorphic-unfetch";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -32,8 +31,8 @@ export default function ConselhoInternacional(props) {
             <div className="sm:ml-4 sm:text-left text-center">
               <h4 className="">
                 <strong className="text-sm text-gray-800">
-                {props.conselhoInter.cargo}
-                {props.conselhoInter.name}
+                  {props.conselhoInter.cargo}
+                  {props.conselhoInter.name}
                 </strong>
                 <a
                   className="text-xs  ml-2 text-blue-400"
@@ -43,7 +42,7 @@ export default function ConselhoInternacional(props) {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              {props.conselhoInter.descritivo}
+                {props.conselhoInter.descritivo}
               </p>
             </div>
           </div>
@@ -69,7 +68,7 @@ export default function ConselhoInternacional(props) {
             <div className="sm:ml-4 sm:text-left text-center">
               <h4 className="">
                 <strong className="text-sm text-gray-800">
-                {props.conselhoInter.name2}
+                  {props.conselhoInter.name2}
                 </strong>
                 <a
                   className="text-xs ml-2 text-blue-400"
@@ -79,7 +78,7 @@ export default function ConselhoInternacional(props) {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              {props.conselhoInter.descritivo2}
+                {props.conselhoInter.descritivo2}
               </p>
             </div>
           </div>
@@ -105,7 +104,7 @@ export default function ConselhoInternacional(props) {
             <div className="sm:ml-4 sm:text-left text-center">
               <h4 className="">
                 <strong className="text-sm text-gray-800">
-                {props.conselhoInter.name3}
+                  {props.conselhoInter.name3}
                 </strong>
                 <a
                   className="text-xs ml-2 text-blue-400"
@@ -115,7 +114,7 @@ export default function ConselhoInternacional(props) {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              {props.conselhoInter.descritivo3}
+                {props.conselhoInter.descritivo3}
               </p>
             </div>
           </div>
@@ -141,7 +140,7 @@ export default function ConselhoInternacional(props) {
             <div className="sm:ml-4 sm:text-left text-center">
               <h4 className="">
                 <strong className="text-sm text-gray-800">
-                {props.conselhoInter.name4}
+                  {props.conselhoInter.name4}
                 </strong>
                 <a
                   className="text-xs ml-2 text-blue-400"
@@ -151,7 +150,7 @@ export default function ConselhoInternacional(props) {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              {props.conselhoInter.descritivo4}
+                {props.conselhoInter.descritivo4}
               </p>
             </div>
           </div>
@@ -177,7 +176,7 @@ export default function ConselhoInternacional(props) {
             <div className="sm:ml-4 sm:text-left text-center">
               <h4 className="">
                 <strong className="text-sm text-gray-800">
-                {props.conselhoInter.name5}
+                  {props.conselhoInter.name5}
                 </strong>
                 <a
                   className="text-xs ml-2 text-blue-400"
@@ -187,7 +186,7 @@ export default function ConselhoInternacional(props) {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              {props.conselhoInter.descritivo5}
+                {props.conselhoInter.descritivo5}
               </p>
             </div>
           </div>
@@ -213,7 +212,7 @@ export default function ConselhoInternacional(props) {
             <div className="sm:ml-4 sm:text-left text-center">
               <h4 className="">
                 <strong className="text-sm text-gray-800">
-                {props.conselhoInter.name4}
+                  {props.conselhoInter.name4}
                 </strong>
                 <a
                   className="text-xs ml-2 text-blue-400"
@@ -223,7 +222,7 @@ export default function ConselhoInternacional(props) {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              {props.conselhoInter.descritivo4}
+                {props.conselhoInter.descritivo4}
               </p>
             </div>
           </div>
@@ -249,7 +248,7 @@ export default function ConselhoInternacional(props) {
             <div className="sm:ml-4 sm:text-left text-center">
               <h4 className="">
                 <strong className="text-sm text-gray-800">
-                {props.conselhoInter.name7}
+                  {props.conselhoInter.name7}
                 </strong>
                 <a
                   className="text-xs ml-2 text-blue-400"
@@ -259,7 +258,7 @@ export default function ConselhoInternacional(props) {
                 </a>
               </h4>
               <p className="text-gray-600 text-sm font-light text-justify">
-              {props.conselhoInter.descritivo7}
+                {props.conselhoInter.descritivo7}
               </p>
             </div>
           </div>
@@ -267,15 +266,14 @@ export default function ConselhoInternacional(props) {
       </div>
     </div>
   );
-  
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch('http://localhost:3000/api/conselho-inter-api')
+  const res = await fetch("http://localhost:3000/api/conselho-inter-api");
   const conselhoInter = await res.json();
   return {
     props: {
       conselhoInter,
-    }
+    },
   };
 }
