@@ -1,3 +1,5 @@
+
+import fetch from 'isomorphic-unfetch'
 import Image from "next/image";
 import Head from "next/head";
 
