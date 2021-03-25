@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Tabs from "../components/Tabs";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div className="mx-auto">
       <Head>
@@ -32,10 +32,10 @@ export default function Home() {
                 <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                   <div className="pr-12">
                     <h1 className="text-white font-semibold text-5xl">
-                      A Rede Sem Fronteiras.
+                      {props.inicio.title}
                     </h1>
                     <p className="mt-4 text-lg text-gray-100">
-                    Somos uma rede de organizações da sociedade civil, associações de imigrantes, instituições acadêmicas e ativistas com atuação na defesa e na promoção dos direitos das pessoas migrantes e refugiadas e na articulação da diáspora latino americana..
+                    {props.inicio.content}
                     </p>
                   </div>
                 </div>
@@ -49,4 +49,14 @@ export default function Home() {
       </main>
     </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  const res = await fetch("https://cryptic-retreat-90035.herokuapp.com/posts");
+  const inicio = await res.json();
+  return {
+    props: {
+      inicio,
+    },
+  };
 }
