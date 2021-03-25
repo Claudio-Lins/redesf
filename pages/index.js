@@ -32,10 +32,10 @@ export default function Home(props) {
                 <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                   <div className="pr-12">
                     <h1 className="text-white font-semibold text-5xl">
-                      {props.inicio.title}
+                      {props.posts.title}
                     </h1>
                     <p className="mt-4 text-lg text-gray-100">
-                    {props.inicio.content}
+                    {props.posts.content}
                     </p>
                   </div>
                 </div>
@@ -53,10 +53,10 @@ export default function Home(props) {
 
 export async function getServerSideProps(context) {
   const res = await fetch("https://cryptic-retreat-90035.herokuapp.com/posts");
-  const inicio = await res.json();
+  const posts = await res.json();
   return {
     props: {
-      inicio,
+      posts,
     },
   };
 }
