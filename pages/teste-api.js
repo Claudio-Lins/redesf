@@ -9,8 +9,8 @@ export default function Teste(props) {
  
 
 export async function getStaticProps(context) {
-    const res = await fetch('https://cryptic-retreat-90035.herokuapp.com/posts')
-    const posts = await res.json();
+    const postsRes = await fetch('https://cryptic-retreat-90035.herokuapp.com/posts')
+    const posts = await postsRes.json();
     return {
       props: {
         posts,
