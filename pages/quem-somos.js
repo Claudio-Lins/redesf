@@ -251,12 +251,12 @@ export default function About({ aboutPage }) {
               height={56}
             />
           </div>
-          <div className="p-4 hidden sm:flex">
+          <div className="p-4">
             <Image
-              src="/quem-somos/logos/image-blank-75x150.png"
-              alt="image-blank"
-              width={75}
-              height={150}
+              src="/quem-somos/Logos/casa-da-gente-lg-80x120.png"
+              alt="Casa da Gente"
+              width={80}
+              height={120}
             />
           </div>
           <div className="p-4">
@@ -284,12 +284,12 @@ export default function About({ aboutPage }) {
             />
           </div>
 
-          <div className="p-4 hidden sm:flex">
+          <div className="p-4">
             <Image
-              src="/quem-somos/logos/image-blank-75x150.png"
-              alt="image-blank"
-              width={75}
-              height={150}
+              src="/quem-somos/Logos/casa-da-gente-lg-80x120.png"
+              alt="Casa da Gente"
+              width={80}
+              height={120}
             />
           </div>
 
