@@ -1,7 +1,10 @@
 import Image from 'next/image'
 
-const LogosMembros = () => {
-    return (
+
+export default function LogosMembros() {
+  return (
+
+      <section className="container">
         <div className='mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-center space-y-2 items-center'>
             <div className='p-4'>
             <Image
@@ -167,7 +170,7 @@ const LogosMembros = () => {
             
 
         </div>
+        </section>
     );
 }
  
-export default LogosMembros;
