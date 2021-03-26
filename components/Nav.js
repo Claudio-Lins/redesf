@@ -142,7 +142,7 @@ const Nav = () => {
               {/*  */}
               {/* Arquivos */}
               <div className=" hover:font-semibold">
-                <Link href="#">
+                <Link href="/teste-api">
                   <a className="hover:text-green-600 flex items-center space-x-1">
                     <h3>Arquivos</h3>
                   </a>

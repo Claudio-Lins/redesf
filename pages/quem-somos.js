@@ -2,7 +2,7 @@ import Image from "next/image";
 import Head from "next/head";
 import LogosMembros from '../utils/LogosMembros'
 
-const ConselhoInternacional = () => {
+const ConselhoInternacional = (props) => {
   return (
     <div className="min-h-screen bg-white mt-36 mb-20">
       <Head>
@@ -23,22 +23,11 @@ const ConselhoInternacional = () => {
       <section>
       <div className="container px-5 py-12 mx-auto">
       <div className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 text-left border-b">
-        <h1>Quem Somos</h1>
+        <h1>{props.quemSomos.titulo01}</h1>
       </div>
       <div className="mx-auto text-justify font-light text-gray-600 body-font leading-relaxed">
         <p>
-          A <strong className="font-semibold">Rede Sem Fronteiras</strong> é uma
-          instituição que atua na defesa e na promoção dos direitos das pessoas
-          migrantes e refugiadas, e na articulação da diáspora latino americana.
-          É formada por organizações da sociedade civil, associações de
-          imigrantes, instituições acadêmicas e ativistas com presença nas
-          Américas e na Europa. Fundada em abril de 2008 na cidade de Cuenca, no
-          Equador, durante o II Fórum Ibero-Americano de Migração e
-          Desenvolvimento (FIBEMYD), a{" "}
-          <strong className="font-semibold">Rede Sem Fronteiras (RSF)</strong>{" "}
-          era chamada até 2019 de{" "}
-          <strong className="font-semibold">Espaço Sem Fronteiras (ESF)</strong>
-          .
+        {props.quemSomos.texto01}
         </p><br/>
         <p>
           A <strong className="font-semibold">RSF</strong> nasceu da percepção da necessidade de integração de organizações
@@ -144,5 +133,15 @@ const ConselhoInternacional = () => {
     </div>
   );
 };
+
+export async function getServerSideProps(context) {
+  const res = await fetch("http://localhost:1337/quem-somos");
+  const quemSomos = await res.json();
+  return {
+    props: {
+      quemSomos,
+    },
+  };
+}
 
 export default ConselhoInternacional;
