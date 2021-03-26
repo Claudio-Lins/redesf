@@ -6,7 +6,7 @@ import LogosMembros from '../utils/LogosMembros'
 export default function About( {aboutPage} ) {
   return (
 
-    <div className="min-h-screen mx-auto bg-white mt-16 mb-20">
+    <div className="min-h-screen bg-white mt-16 mb-20">
       <Head>
         <title>{aboutPage.title}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -17,11 +17,13 @@ export default function About( {aboutPage} ) {
           <Image
             src={aboutPage.singleCover01.url}
             alt="Rede Sem Fronteiras"
+            layout="responsive"
             width={1280}
             height={320}
           />
         
       </div>
+      
       <section>
       <div className="container px-5 py-12 mx-auto">
       <div className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 text-left border-b">
