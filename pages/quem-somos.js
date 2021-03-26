@@ -141,7 +141,7 @@ export default function About( {aboutPage} ) {
 );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(
     "https://cryptic-retreat-90035.herokuapp.com/about-page"
   );
