@@ -49,7 +49,7 @@ export default function Teste({ conselhoInternacional }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(
     "https://cryptic-retreat-90035.herokuapp.com/conselho-internacionals"
   );

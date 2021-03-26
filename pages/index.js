@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Tabs from "../components/Tabs";
 
-export default function Home(props) {
+export default function Home( { homePage } ) {
   return (
     <div className="mx-auto">
       <Head>
-        <title>Rede Sem Fronteiras</title>
+        <title>{homePage.title01}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
@@ -31,11 +31,11 @@ export default function Home(props) {
               <div className="items-center flex flex-wrap">
                 <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                   <div className="pr-12">
-                    <h1 className="text-white font-semibold text-5xl">
-                      {props.posts.title}
+                    <h1 className="text-white font-semibold text-4xl tracking-wide">
+                    {homePage.title01}
                     </h1>
-                    <p className="mt-4 text-lg text-gray-100">
-                    {props.posts.content}
+                    <p className="mt-4 font-thin text-gray-100 tracking-wider">
+                    {homePage.textContent01}
                     </p>
                   </div>
                 </div>
@@ -51,12 +51,15 @@ export default function Home(props) {
   );
 }
 
-export async function getServerSideProps(context) {
-  const res = await fetch("https://cryptic-retreat-90035.herokuapp.com/posts");
-  const posts = await res.json();
+export async function getServerSideProps() {
+  const res = await fetch(
+    "https://cryptic-retreat-90035.herokuapp.com/home-page"
+  );
+  const homePage = await res.json();
+
   return {
     props: {
-      posts,
+      homePage,
     },
   };
 }
