@@ -6,7 +6,7 @@ import LogosMembros from '../utils/LogosMembros'
 export default function About( {aboutPage} ) {
   return (
 
-    <div className="min-h-screen bg-white mt-16 mb-20">
+    <div className="min-h-screen mx-auto bg-white mt-16 mb-20">
       <Head>
         <title>{aboutPage.title}</title>
         <link rel="icon" href="/favicon.ico" />
