@@ -254,7 +254,7 @@ export default function About({ aboutPage }) {
           <div className="p-4 hidden sm:flex">
             <Image
               src="/quem-somos/logos/image-blank-75x150.png"
-              alt="image-blanck"
+              alt="image-blank"
               width={75}
               height={150}
             />
@@ -288,10 +288,11 @@ export default function About({ aboutPage }) {
             <Image
               src="/quem-somos/logos/image-blank-75x150.png"
               alt="image-blank"
-              width={80}
-              height={120}
+              width={75}
+              height={150}
             />
           </div>
+
         </div>
       </section>
     </div>
