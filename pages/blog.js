@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Head from "next/head";
+import Link from 'next/link'
 
 export default function Blog({ allPosts }) {
   return (
     <>
       <Head>
-        <title>RedeSF - Conselho Internacional</title>
+        <title>RedeSF - Blog</title>
         // {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
+      <Link href="/single-post">
+        <a>
       <div className="relative">
         <div className="relative">
           <Image
@@ -28,8 +31,7 @@ export default function Blog({ allPosts }) {
       <div className="md:grid md:grid-cols-3 container mx-auto space-x-4">
         {/*  */}
 
-        {allPosts &&
-          allPosts.map((posts) => (
+        {allPosts && allPosts.map((posts) => (
             <div key={posts.id}>
               <div className="flex max-w-xl my-10 bg-white shadow-md rounded-lg overflow-hidden mx-auto">
                 <div className="flex items-center w-full">
@@ -63,7 +65,7 @@ export default function Blog({ allPosts }) {
                         alt="Blog - Rede Sem Fronteiras"
                         layout="responsive"
                         width={470}
-                        height={400}
+                        height={350}
                         objectFit="cover"
                       />
                     </div>
@@ -71,7 +73,7 @@ export default function Blog({ allPosts }) {
                       {posts.title}
                     </div>
                     <div className="text-gray-500 font-thin text-sm mb-6 mx-3 px-2">
-                      {posts.content}
+                      {posts.resume}
                     </div>
                     <div className="flex justify-start mb-4 border-t border-gray-100">
                       <div className="flex w-full mt-1 pt-2 pl-5">
@@ -150,6 +152,13 @@ export default function Blog({ allPosts }) {
                     <div className="flex w-full border-t border-gray-100">
                       <div className="mt-3 mx-5 flex flex-row">
                         <div className="flex text-gray-700 font-normal text-sm rounded-md mb-2 mr-4 items-center">
+                          Author:
+                          <div className="ml-1 text-gray-400 font-thin text-ms">
+                          Claudio Lins
+                            
+                          </div>
+                        </div>
+                        <div className="flex text-gray-700 font-normal text-sm rounded-md mb-2 mr-4 items-center">
                           Comments:
                           <div className="ml-1 text-gray-400 font-thin text-ms">
                             {" "}
@@ -215,6 +224,8 @@ export default function Blog({ allPosts }) {
             </div>
           ))}
       </div>
+      </a>
+      </Link>
     </>
   );
 }
