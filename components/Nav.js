@@ -149,6 +149,15 @@ const Nav = () => {
                 </Link>
               </div>
               {/*  */}
+              {/* Blog */}
+              <div className=" hover:font-semibold">
+                <Link href="/blog">
+                  <a className="hover:text-green-600 flex items-center space-x-1">
+                    <h3>Blog</h3>
+                  </a>
+                </Link>
+              </div>
+              {/*  */}
               {/* Contatos */}
               <div className="hover:font-semibold">
                 <Link href="/contact">
