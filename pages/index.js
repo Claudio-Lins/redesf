@@ -13,8 +13,7 @@ export default function Home( { homePage } ) {
           className="relative pt-16 pb-32 flex content-center items-center justify-center"
           style={{
             minHeight: "75vh",
-          }}
-        >
+          }}>
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
