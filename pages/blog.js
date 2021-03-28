@@ -2,7 +2,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Blog({ allPosts }) {
+export default function Blog({ posts }) {
   return (
     <>
       <div className="">
@@ -11,14 +11,14 @@ export default function Blog({ allPosts }) {
         </Head>
         <div className="relative mt-3 md:py-0 bg-red-500">
           <div>
-          <Image
-            src="/blog/blog-cover.jpg"
-            alt="Blog - Rede Sem Fronteiras"
-            layout="responsive"
-            width={1920}
-            height={550}
-            objectFit="cover"
-          />
+            <Image
+              src="/blog/blog-cover.jpg"
+              alt="Blog - Rede Sem Fronteiras"
+              layout="responsive"
+              width={1920}
+              height={550}
+              objectFit="cover"
+            />
           </div>
           <div className="absolute top-0 bg-black opacity-50 w-full h-full flex items-center justify-center">
             <div className=" text-gray-50 text-xl xl:text-5xl font-semibold text-center">
@@ -26,14 +26,14 @@ export default function Blog({ allPosts }) {
             </div>
           </div>
         </div>
-              {/*  */}
-        <Link href="/single-post">
-          <a>
+        {/*  */}
+        
             <div className="md:grid md:grid-cols-3 container mx-auto space-x-4">
-
-              {allPosts &&
-                allPosts.map((posts) => (
-                  <div key={posts.id}>
+              {posts &&
+                posts.map((posts) => (
+                  <div>
+                    <Link href={`/${posts.slug}`} key={posts.id}>
+                      <a>
                     <div className="flex max-w-xl my-10 bg-white shadow-md rounded-lg overflow-hidden mx-auto">
                       <div className="flex items-center w-full">
                         <div className="w-full">
@@ -221,11 +221,13 @@ export default function Blog({ allPosts }) {
                         </div>
                       </div>
                     </div>
+                    </a>
+                    </Link>
                   </div>
                 ))}
             </div>
-          </a>
-        </Link>
+         
+        
       </div>
     </>
   );
@@ -233,11 +235,11 @@ export default function Blog({ allPosts }) {
 
 export async function getStaticProps() {
   const res = await fetch("https://cryptic-retreat-90035.herokuapp.com/posts");
-  const allPosts = await res.json();
+  const posts = await res.json();
 
   return {
     props: {
-      allPosts,
+      posts,
     },
   };
 }
