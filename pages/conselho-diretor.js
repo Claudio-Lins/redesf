@@ -3,10 +3,13 @@ import Head from "next/head";
 
 export default function ConselhoDiretor({ conselhoDiretor }) {
   return (
-    <div className="py-20 lg:w-4/5 mx-auto">
+    <div className="py-16 lg:w-4/5 mx-auto">
       <Head>
         <title>RedeSF - Conselho Diretor</title>
       </Head>
+      <div className='text-center font-semibold text-4xl text-blue-800 mb-8'>
+      <h1>Conselho Diretor</h1>
+      </div>
       {conselhoDiretor &&
         conselhoDiretor.map((diretor) => (
           <div key={diretor.id}>
