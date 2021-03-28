@@ -2,14 +2,14 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Blog({ posts }) {
+export default function Blog({ post }) {
   return (
     <>
       <div className="">
         <Head>
           <title>RedeSF - Blog</title>
         </Head>
-        <div className="relative mt-3 md:py-0 bg-red-500">
+        <div className="relative mt-3 md:py-0">
           <div>
             <Image
               src="/blog/blog-cover.jpg"
@@ -29,10 +29,10 @@ export default function Blog({ posts }) {
         {/*  */}
         
             <div className="md:grid md:grid-cols-3 container mx-auto space-x-4">
-              {posts &&
-                posts.map((posts) => (
+              {post &&
+                post.map((post) => (
                   <div>
-                    <Link href={`/${posts.slug}`} key={posts.id}>
+                    <Link href={`/${post.slug}`} key={post.id}>
                       <a>
                     <div className="flex max-w-xl my-10 bg-white shadow-md rounded-lg overflow-hidden mx-auto">
                       <div className="flex items-center w-full">
@@ -62,21 +62,21 @@ export default function Blog({ posts }) {
                           <div className="border-b border-gray-100" />
                           <div className="text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2">
                             <Image
-                              src={posts.cover.url}
+                              src={post.cover.url}
                               alt="Blog - Rede Sem Fronteiras"
                               layout="responsive"
-                              width={470}
-                              height={350}
+                              width={post.cover.width}
+                              height={post.cover. height}
                               objectFit="cover"
                             />
                           </div>
                           <div className="text-gray-600 font-semibold text-lg mb-2 mx-3 px-2">
-                            {posts.title}
+                            {post.title}
                           </div>
                           <div className="text-gray-500 font-thin text-sm mb-6 mx-3 px-2">
-                            {posts.resume}
+                            {post.resume}
                           </div>
-                          <div className="flex justify-start mb-4 border-t border-gray-100">
+                          {/* <div className="flex justify-start mb-4 border-t border-gray-100">
                             <div className="flex w-full mt-1 pt-2 pl-5">
                               <span className="bg-white transition ease-out duration-300 hover:text-red-500 border w-8 h-8 px-2 pt-2 text-center rounded-full text-gray-400 cursor-pointer mr-2">
                                 <svg
@@ -149,13 +149,13 @@ export default function Blog({ posts }) {
                                 </svg>
                               </span>
                             </div>
-                          </div>
+                          </div> */}
                           <div className="flex w-full border-t border-gray-100">
                             <div className="mt-3 mx-5 flex flex-row">
                               <div className="flex text-gray-700 font-normal text-sm rounded-md mb-2 mr-4 items-center">
                                 Author:
                                 <div className="ml-1 text-gray-400 font-thin text-ms">
-                                  Claudio Lins
+                                {post.author}
                                 </div>
                               </div>
                               <div className="flex text-gray-700 font-normal text-sm rounded-md mb-2 mr-4 items-center">
@@ -175,10 +175,9 @@ export default function Blog({ posts }) {
                             </div>
                             <div className="mt-3 mx-5 w-full flex justify-end">
                               <div className="flex text-gray-700 font-normal text-sm rounded-md mb-2 mr-4 items-center">
-                                Likes:{" "}
+                                Categories:
                                 <div className="ml-1 text-gray-400 font-thin text-ms">
-                                  {" "}
-                                  120k
+                                {post.id}
                                 </div>
                               </div>
                             </div>
@@ -235,11 +234,11 @@ export default function Blog({ posts }) {
 
 export async function getStaticProps() {
   const res = await fetch("https://cryptic-retreat-90035.herokuapp.com/posts");
-  const posts = await res.json();
+  const post = await res.json();
 
   return {
     props: {
-      posts,
+      post,
     },
   };
 }
