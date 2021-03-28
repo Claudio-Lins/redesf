@@ -232,7 +232,7 @@ export default function Blog({ post }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServeSideProps() {
   const res = await fetch("https://cryptic-retreat-90035.herokuapp.com/posts");
   const post = await res.json();
 
