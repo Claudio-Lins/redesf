@@ -33,7 +33,7 @@ export default function ConselhoInternacional({ conselhoInternacional }) {
                       </strong>
                       <a
                         className="text-xs ml-2 text-blue-400"
-                        href={conselho.email}
+                        href="mailto:{conselho.email}"
                       >
                         {conselho.email}
                       </a>
