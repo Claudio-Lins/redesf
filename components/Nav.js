@@ -114,7 +114,7 @@ const Nav = () => {
                         </div>
 
                         <div className="mb-0 py-2 bg-white mx-2">
-                          <Link href="#">
+                          <Link href="/conselho-diretor">
                             <a className="btnDropdown">Conselho Diretor</a>
                           </Link>
                         </div>
@@ -224,7 +224,7 @@ const Nav = () => {
                   </div>
 
                   <div className="hover:text-green-700 mb-0 py-2  ml-4">
-                    <Link href="#">
+                    <Link href="/conselho-diretor">
                       <a className="inline-block">Conselho Diretor</a>
                     </Link>
                   </div>
