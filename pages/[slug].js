@@ -16,16 +16,16 @@ export default function Post({ post }) {
             </h1>
           </div>
           <div className="flex text-white text-xs font-light text-center justify-center space-x-4 mt-4">
-            <p>autor</p>
+            <p>{post.author}</p>
             <p>|</p>
-            <p>data</p>
+            <p>{post.date}</p>
           </div>
         </div>
       </section>
       <section className="bg-white rounded-xl shadow-xl py-2 md:w-2/5 md:-mt-10 mx-auto">
         <div className="text-center px-4">
           <div className="rounded-lg p-2 -mt-10 lg:mt-0 lg:py-6">
-            {/* <Image
+            <Image
               className="rounded-xl shadow-xl text-center"
               src={post.cover.url}
               alt="Blog - Rede Sem Fronteiras"
@@ -33,7 +33,7 @@ export default function Post({ post }) {
               width={post.cover.width}
               height={post.cover.height}
               objectFit='contain'
-            /> */}
+            />
           </div>
           <div className="flex text-gray-700 text-xs font-light text-center justify-center space-x-4 mt-0">
             <p>Categoria</p>
