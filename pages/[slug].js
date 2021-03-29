@@ -5,7 +5,7 @@ export default function Post({ post }) {
   return (
     <div>
       <Head>
-        <title>RedeSF - </title>
+        <title>RedeSF - {post.title} </title>
       </Head>
 
       <section className="bg-purple-800 py-12 px-4 md:py-20">
@@ -22,7 +22,7 @@ export default function Post({ post }) {
           </div>
         </div>
       </section>
-      <section className="bg-white rounded-xl shadow-xl py-2 md:w-2/5 md:-mt-10 mx-auto">
+      <section className="bg-white rounded-xl shadow-xl py-2 md:w-3/5 md:-mt-10 mx-auto">
         <div className="text-center px-4">
           <div className="rounded-lg p-2 -mt-10 lg:mt-0 lg:py-6">
             <Image
@@ -40,9 +40,9 @@ export default function Post({ post }) {
             <p>|</p>
             <p>{post.date}</p>
           </div>
-          <div className='text-sm font-light text-gray-700 px-4 py-2 md:p-8 tracking-wider text-justify'>
+          <div className='text-sm font-extralight tracking-widest leading-relaxed text-gray-700 px-4 py-2 md:py-8 text-justify'>
             <p>
-            content
+            {post.content}
             </p>
           </div>
           
