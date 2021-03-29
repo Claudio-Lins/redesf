@@ -3,7 +3,7 @@ import Tabs from "../components/Tabs";
 
 export default function Home( { homePage } ) {
   return (
-    <div className="mx-auto">
+    <div className="">
       <Head>
         <title>{homePage.title01}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -26,10 +26,10 @@ export default function Home( { homePage } ) {
               className="w-full h-full absolute opacity-75 bg-black"
             ></span>
           </div>
-          <div className="container relative mx-auto">
-              <div className="items-center flex flex-wrap">
+          <div className="container relative">
+              <div className="items-center flex flex-wrap mx-auto">
                 <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                  <div className="pr-12">
+                  <div className="">
                     <h1 className="text-white font-semibold text-4xl tracking-wide">
                     {homePage.title01}
                     </h1>
