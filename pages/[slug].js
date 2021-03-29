@@ -36,9 +36,9 @@ export default function Post({ post }) {
             />
           </div>
           <div className="flex text-gray-700 text-xs font-light text-center justify-center space-x-4 mt-0">
-            <p>Categoria</p>
+            <p>{post.category.name}</p>
             <p>|</p>
-            <p>Data</p>
+            <p>{post.date}</p>
           </div>
           <div className='text-sm font-light text-gray-700 px-4 py-2 md:p-8 tracking-wider text-justify'>
             <p>
