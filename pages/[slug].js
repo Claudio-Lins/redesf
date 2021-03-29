@@ -12,7 +12,7 @@ export default function Post({ post }) {
         <div className="md:w-1/3 mx-auto">
           <div className="text-gray-50 text-3xl font-semibold text-center">
             <h1>
-            Titulo
+            {post.title}
             </h1>
           </div>
           <div className="flex text-white text-xs font-light text-center justify-center space-x-4 mt-4">
