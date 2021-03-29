@@ -6,7 +6,6 @@ export default function Post() {
     <div>
       <Head>
         <title>RedeSF - Post</title>
-        // {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
       <section className="bg-purple-800 py-12 px-4 md:py-20">
