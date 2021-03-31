@@ -28,17 +28,17 @@ export default function Blog({ post }) {
         </div>
         {/*  */}
         
-            <div className="md:grid md:grid-cols-3 container mx-auto space-x-4">
+            <div className="md:grid lg:grid-cols-3 container px-4 mx-auto space-x-6">
               {post &&
                 post.map((post) => (
                   <div>
                     <Link href={`/${post.slug}`} key={post.id}>
                       <a>
-                    <div className="flex max-w-xl my-10 bg-white shadow-md rounded-lg overflow-hidden mx-auto">
+                    <div className="flex max-w-xl mt-10 bg-white shadow-lg border rounded-lg overflow-hidden mx-auto">
                       <div className="flex items-center w-full">
                         <div className="w-full">
                         
-                          <div className="border-b border-gray-100" />
+                          <div className="" />
                           <div className="text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2">
                             <Image
                               src={post.cover.url}
