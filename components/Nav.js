@@ -120,7 +120,7 @@ const Nav = () => {
                         </div>
 
                         <div className="mb-0 py-2 bg-white mx-2">
-                          <Link href="#">
+                          <Link href="/secretaria-tecnica">
                             <a className="btnDropdown">Secretaria Técnica</a>
                           </Link>
                         </div>
@@ -230,7 +230,7 @@ const Nav = () => {
                   </div>
 
                   <div className="hover:text-green-700 mb-0 py-2 ml-4">
-                    <Link href="#">
+                    <Link href="/secretaria-tecnica">
                       <a className="inline-block">Secretaria Técnica</a>
                     </Link>
                   </div>
