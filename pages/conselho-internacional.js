@@ -11,7 +11,7 @@ export default function ConselhoInternacional({ conselhoInternacional }) {
       <h1>Conselho Internacional</h1>
       </div>
       {conselhoInternacional &&
-        conselhoInternacional.slice(0, 5).map((conselho) => (
+        conselhoInternacional.slice(0, 20).map((conselho) => (
           <div key={conselho.id}>
             <div className="lg:flex p-8 lg:items-center md:px-48 lg:py-2">
               <div className="flex-grow bg-white shadow-lg rounded-md border p-6">
