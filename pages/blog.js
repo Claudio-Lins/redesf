@@ -30,7 +30,7 @@ export default function Blog({ post }) {
         
             <div className="md:grid lg:grid-cols-3 container px-4 mx-auto space-x-6">
               {post &&
-                post.map((post) => (
+                post.slice(0, 2).map((post) => (
                   <div>
                     <Link href={`/${post.slug}`} key={post.id}>
                       <a>
