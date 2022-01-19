@@ -7,7 +7,7 @@ export default function Blog({ post }) {
     <>
       <div className="">
         <Head>
-          <title>RedeSF - Blog</title>
+          <title>RedeSF - Blog!!!!</title>
         </Head>
         <div className="relative mt-3 md:py-0">
           <div>
