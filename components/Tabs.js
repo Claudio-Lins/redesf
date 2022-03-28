@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { CardProgramacao } from './CardProgramacao';
 
-const Tabs = ({ color }) => {
+export function Tabs() {
   const [openTab, setOpenTab] = useState(1);
-  const width = 400
+  const width = 4000
   return (
     <>
       <div className="flex flex-wrap justify-center">
@@ -146,31 +146,66 @@ const Tabs = ({ color }) => {
               </a>
             </li>
           </ul>
-          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
-            <div className="px-4 py-5 flex-auto">
-              <div className="tab-content tab-space">
-                <div className={openTab === 1 ? 'flex flex-wrap gap-4' : 'hidden'} id="seg">
+          <div className="relative flex flex-col break-words bg-white w-full mb-6 shadow-lg rounded">
+            <div className=" py-5">
+              <div className="flex justify-center items-center">
+                
+                <div className={openTab === 1 ? 'flex justify-center flex-wrap gap-6' : 'hidden'} id="seg">
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                </div>
+
+                <div className={openTab === 2 ? 'flex justify-center flex-wrap gap-6' : 'hidden'} id="ter">
                   <CardProgramacao />
                   <CardProgramacao />
                 </div>
-                <div className={openTab === 2 ? 'block' : 'hidden'} id="ter">
-                  <p>Terça</p>
+
+                <div className={openTab === 3 ? 'flex justify-center flex-wrap gap-6' : 'hidden'} id="qua">
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
                 </div>
-                <div className={openTab === 3 ? 'block' : 'hidden'} id="qua">
-                  <p>Quarta</p>
+
+                <div className={openTab === 4 ? 'flex justify-center flex-wrap gap-6' : 'hidden'} id="qui">
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
                 </div>
-                <div className={openTab === 4 ? 'block' : 'hidden'} id="qui">
-                  <p>Quinta</p>
+
+                <div className={openTab === 5 ? 'flex justify-center flex-wrap gap-6' : 'hidden'} id="sex">
+                  <CardProgramacao />
                 </div>
-                <div className={openTab === 5 ? 'block' : 'hidden'} id="sex">
-                  <p>Sexta</p>
+
+                <div className={openTab === 6 ? 'flex justify-center flex-wrap gap-6' : 'hidden'} id="sab">
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
                 </div>
-                <div className={openTab === 6 ? 'block' : 'hidden'} id="sab">
-                  <p>Sábado</p>
+
+                <div className={openTab === 7 ? 'flex justify-center flex-wrap gap-6' : 'hidden'} id="dom">
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
+                  <CardProgramacao />
                 </div>
-                <div className={openTab === 7 ? 'block' : 'hidden'} id="dom">
-                  <p>Domingo</p>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -179,11 +214,3 @@ const Tabs = ({ color }) => {
     </>
   );
 };
-
-export default function TabsRender() {
-  return (
-    <>
-      <Tabs color="blue" />
-    </>
-  );
-}
